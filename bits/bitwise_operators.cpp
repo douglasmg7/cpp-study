@@ -1,5 +1,5 @@
 #include <iostream>
-#include <bitset>
+#include <bitset>	// std::bitset
 using namespace std;
 
 int main() {
@@ -11,20 +11,20 @@ int main() {
 	cout << inputNum << " in binary is " << inputBits << endl;
 
 	bitset<8> bitwiseNOT (~inputBits);
-	cout << "Logical NOT: ~" << endl;
+	cout << "Logical NOT, ~" << endl;
 	cout << "~" << inputBits << " = " << bitwiseNOT << endl;
 
-	cout << "Logical AND: & with 00001111" << endl;
+	cout << "Logical AND, & with 00001111" << endl;
 	bitset<8> bitwiseAND = (0x0F & inputNum);
 	cout << "00001111 & " << inputBits << " = " << bitwiseAND << endl;
 
-	cout << "Logical OR: | with 00001111" << endl;
+	cout << "Logical OR, | with 00001111" << endl;
 	bitset<8> bitwiseOR (0x0F | inputNum);
 	cout << "00001111 | " << inputBits << " = " << bitwiseOR << endl;
 
-	cout << "Logical "
-		
+	cout << "Logical XOR, ^ with 00001111" << endl;
+	bitset<8> bitwiserXOR (0x0F ^ inputNum);
+	cout << "00001111 ^ " << inputBits << " = " << bitwiserXOR << endl;
 
 	return 0;
-
 }
