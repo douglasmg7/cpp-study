@@ -25,5 +25,7 @@ int main() {
 	cout << "long long: " << sizeof(long long) << endl;
 	cout << "float: " << sizeof(float) << endl;
 	cout << "double: " << sizeof(double) << endl;
+	cout << "point to char: " << sizeof(char*) << endl;
+	cout << "point to double: " << sizeof(double*) << endl;
 	return 0;
 }
