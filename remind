@@ -1,0 +1,5 @@
+# The = form is traditional and dates back to C, but in doubt, use the general {} list form.
+# If nothing else, it saves you from conversions that lose information (narrow conversetions).
+double d1 = 2.3;	// Traditional to C.
+double d1 = {2.3}	// Redundant.
+double d1 {2,3};	// Preferencial (narrow conversion).
